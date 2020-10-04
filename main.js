@@ -43,15 +43,16 @@ window.addEventListener('load', ()=> {
     document.querySelector('body').removeChild(loadPage);
 })
 
-//scroll nav-links active
+//scroll nav-links active & button back to top
 document.body.onscroll = function(){
     var scrollTop = document.documentElement.scrollTop;
-    (scrollTop < 990) ? (menuLinks[0].classList.add('active')) : (menuLinks[0].classList.remove('active'));
-    (scrollTop >= 990 && scrollTop < 1980) ? (menuLinks[1].classList.add('active')) : (menuLinks[1].classList.remove('active'));
-    (scrollTop >= 1980 && scrollTop < 2970) ? (menuLinks[2].classList.add('active')) : (menuLinks[2].classList.remove('active'));
-    (scrollTop >= 2970 && scrollTop < 3960) ? (menuLinks[3].classList.add('active')) : (menuLinks[3].classList.remove('active'));
-    (scrollTop >= 3960 && scrollTop < 4950) ? (menuLinks[4].classList.add('active')) : (menuLinks[4].classList.remove('active'));
-    if(scrollTop >= 4950){
+    var section = document.querySelectorAll('section');
+    (scrollTop < section[0].offsetTop) ? (menuLinks[0].classList.add('active')) : (menuLinks[0].classList.remove('active'));
+    (scrollTop >=  section[0].offsetTop && scrollTop <  section[1].offsetTop) ? (menuLinks[1].classList.add('active')) : (menuLinks[1].classList.remove('active'));
+    (scrollTop >=  section[1].offsetTop && scrollTop <  section[2].offsetTop) ? (menuLinks[2].classList.add('active')) : (menuLinks[2].classList.remove('active'));
+    (scrollTop >=  section[2].offsetTop && scrollTop <  section[3].offsetTop) ? (menuLinks[3].classList.add('active')) : (menuLinks[3].classList.remove('active'));
+    (scrollTop >=  section[3].offsetTop && scrollTop <  section[4].offsetTop) ? (menuLinks[4].classList.add('active')) : (menuLinks[4].classList.remove('active'));
+    if(scrollTop >=  section[4].offsetTop){
         menuLinks[5].classList.add('active');
         document.querySelector('.backTop').style.opacity = 1;
         document.querySelector('.backTop').style.pointerEvents = 'visible';
