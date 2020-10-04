@@ -517,12 +517,15 @@ i.fa-database{
 /*footer*/
 footer{
     background: #101d2c;
-    font-size: .98;
+    
     color: rgb(255, 255, 255, .5);
 }
 
 /*Media*/
 @media  (max-width:992px){
+     *{
+        font-size: 0.8em;
+    }
     #contact img{
         display: none;
     }
