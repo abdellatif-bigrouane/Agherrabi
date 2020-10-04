@@ -28,11 +28,11 @@ setInterval(f,5000);
 function f(){
     if(bool)
     {
-        url = 'url(/images/bg2.jpg)';
+        url = 'url(bg2.jpg)';
         
     }
     else
-        url = 'url(/images/bg1.jpg)';
+        url = 'url(bg1.jpg)';
     bool = !bool;
     header.style.background = "linear-gradient(rgba(16, 29, 44, 0.95),rgb(16, 29, 43,.95))," + url + "center no-repeat";
 }
