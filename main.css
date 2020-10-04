@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Poppins:wght@300&family=Ubuntu&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -18,7 +18,7 @@ a{
     font-family: MV Boli;
 }
 h1{
-    font-family: 'Palace Script MT'; 
+    font-family: 'Niconne', cursive;
     color: #c69963;
     text-align: center;
     font-size: 4.5rem;
@@ -423,7 +423,7 @@ i.fa-database{
     outline: none;
     text-align: center;
     padding: 0 15px;
-    font-family: MV Boli;
+    font-family: 'Niconne', cursive;
 }
 #contact form textarea{
     width: 80%;
@@ -437,7 +437,7 @@ i.fa-database{
     box-shadow: 0 0 8px 4px rgb(198,153,99,.3);
     outline: none;
     padding: 15px;
-    font-family: MV Boli;
+    font-family: 'Niconne', cursive;
 }
 ::placeholder{
     font-family: Ubuntu;
