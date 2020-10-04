@@ -4,7 +4,6 @@ html{
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -18,15 +17,19 @@ a{
     text-decoration: none !important;
     font-family: MV Boli;
 }
-
+h1{
+    font-family: 'Palace Script MT'; 
+    color: #c69963;
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 900;
+}
 p{
     font-family: Ubuntu,MV Boli,sans-serif;
 }
-
 ul{
     list-style: none;
 }
-
 section{
     min-height: 100vh;
 }
@@ -95,7 +98,6 @@ section{
     left: -100%;
     background: linear-gradient(to left,transparent,rgba(255, 255, 255, 0.3) ,transparent);
 }
-
 .hover:hover:before{
     transition: left .65s ease;
     left: 100%;
@@ -112,17 +114,14 @@ header{
     color: white;
     transition: background .95s ease;
 }
-
 nav{
     background-color: rgba(16, 29, 44, .95);
 }
-
 header>.container{
     width: 100%;
     height: 100%;
     position: relative;
 }
-
 .navbar-brand{ 
     position: absolute;
     top: 10px;
@@ -130,16 +129,13 @@ header>.container{
     transform: translateX(-50%);
     transition: opacity .65s;
 }
-
 .logo{
     width: 100%;
     max-width: 140px;
 }
-
 .navbar-brand:hover{
     opacity: .8;
 }
-
 .burger{
     position: fixed;
     top: 25px;
@@ -155,24 +151,20 @@ header>.container{
     cursor: pointer;
     z-index: 99;
 }
-
 .bar{
     width: 70%;
     height: 3px;
     background: #c69963;
 }
-
 .bar.first{
     background: linear-gradient(to left, #c69963, rgb(198, 153, 99,.7));
     transition: transform .25s;
 }
-
 .bar.last{
     background: linear-gradient(to left,rgb(198, 153, 99,.7), #c69963);
     transform-origin: left;
     transition: transform .35s;
 }
-
 .nav-list{
     position: fixed;
     width: 100%;
@@ -188,12 +180,10 @@ header>.container{
     opacity: 0;
     z-index: 90;
 }
-
 .nav-item{
     margin: 10px;
     font-weight: 900;
 }
-
 .active{
     color: rgb(255, 255, 255, .5) !important;
 }
@@ -212,7 +202,6 @@ header>.container{
     clip-path: circle(100%);
     opacity: 1;
 }
-
 .text{
     position: absolute;
     width: 100%;
@@ -220,15 +209,6 @@ header>.container{
     transform: translateY(-40%);
     text-align: center;
 }
-
-h1{
-    font-family: 'Palace Script MT'; 
-    color: #c69963;
-    text-align: center;
-    font-size: 4.5rem;
-    font-weight: 900;
-}
-
 header .btn{
     width: 100px;
     padding: 5px 0 !important;
@@ -236,7 +216,6 @@ header .btn{
     position: relative;
     overflow: hidden;
 }
-
 
 /*About*/
 #about{
@@ -253,7 +232,6 @@ header .btn{
     color: #101d2c;
     position: relative;
 }
-
 #about h6::before{
     position: absolute;
     content: '';
@@ -265,11 +243,9 @@ header .btn{
     z-index: -1;
     transform: translate(-50%,-50%);
 } 
-
 #about p{
     font-family: MV Boli;
 }
-
 .social-media{
     width: 40px;
     height: 40px;
@@ -282,13 +258,11 @@ header .btn{
     cursor: pointer;
     color: black;
 }
-
 .social-media:hover{
     background-color: #101d2c;
     color: #fff; 
     border-color: #101d2c;
 }
-
 .social-media:hover i{
     font-size: 1.1em;
     transition: font-size .65s;
@@ -300,12 +274,10 @@ header .btn{
     display: flex;
     align-items: center;
 }
-
 #skills i{
     font-size: 4em;
     margin-bottom: 10px;
 }
-
 i.fa-html5{
     color: #de4b25;
 }
@@ -324,7 +296,6 @@ i.fa-laravel{
 i.fa-database{
     color: #2b3c4d;
 }
-
 #skills h5{
     color: rgba(255, 255, 255, 0.85);
     font-family: 'Poppins', sans-serif;
@@ -344,7 +315,6 @@ i.fa-database{
     flex-direction: column;
     justify-content: space-evenly;
 }
-
 .timeline{
     width: 80%;
     position: relative;
